@@ -3,102 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="db40609fac04b996f8e91cdd3e910b5ed76510b9">
-        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_deeb171a07767f8f8aebfdd7185d2baf9ede5e81/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c1056319ab383977d0c2f693863a5b5aab5379fa">
-        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_bdf3816c943025b6cb5bc215507572b87cbf6045/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_5b198924fb5f19a02d6cee65ac3215a1352fbcd1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/exploded-aar/com.android.support/design/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
-        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.1.1_dd28240eadeff924f0e9fbf9676a4432b88a2a08/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/cumulations/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
-        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_914aa5a5d4759d2a5cedd76a4d3fe5be1689117f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/cumulations/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
-        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.1_71c876b7cff9165669f2984ed70dfbc20deecd4e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/cumulations/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.1/19047bdb6a4fc00a44124f64ca98e88fc204e7e3/okhttp-3.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="19047bdb6a4fc00a44124f64ca98e88fc204e7e3">
-        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.1_983c6b061ff975273b1626c25ec62c7eb7f109f7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_4334204de46ebb3b4731b6e5377877cbb72f67c7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
-        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.1.1_560b4cd03f5b8a0a96ad6ab57b88e8a7120d14a7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/cumulations/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.3.1/99ce730034c6f5aaed710d1e0e9df95e8714ed5f/logging-interceptor-3.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="99ce730034c6f5aaed710d1e0e9df95e8714ed5f">
-        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/logging-interceptor-3.3.1_ef5d9e671d6cde8b5243947c538a7f44493a5a7c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/cumulations/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
         <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_ef4f57a77ce321431fbd63585456e9e844c60870/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1976c6a12396bb9a7d7f3656e7740f87ac77dab6">
+        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_deeb171a07767f8f8aebfdd7185d2baf9ede5e81/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -129,12 +48,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c1056319ab383977d0c2f693863a5b5aab5379fa">
+        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_bdf3816c943025b6cb5bc215507572b87cbf6045/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/cumulations/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
         <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-7.0.1_d0f8b27b24de5ffb9fd69616b1964d145e28fed3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_5b198924fb5f19a02d6cee65ac3215a1352fbcd1/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -183,6 +120,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/exploded-aar/com.android.support/design/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.1.1_dd28240eadeff924f0e9fbf9676a4432b88a2a08/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -201,12 +147,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/cumulations/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_914aa5a5d4759d2a5cedd76a4d3fe5be1689117f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cumulations/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.1_71c876b7cff9165669f2984ed70dfbc20deecd4e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/cumulations/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.0.2/a60c039ba54c73d1133b72178e1b04133c73d13d/adapter-rxjava-2.0.2.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="a60c039ba54c73d1133b72178e1b04133c73d13d">
         <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/adapter-rxjava-2.0.2_85f7ab3f99c0f7035a663186fb079dc29bec4762/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cumulations/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.1/19047bdb6a4fc00a44124f64ca98e88fc204e7e3/okhttp-3.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="19047bdb6a4fc00a44124f64ca98e88fc204e7e3">
+        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.1_983c6b061ff975273b1626c25ec62c7eb7f109f7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_4334204de46ebb3b4731b6e5377877cbb72f67c7/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -225,6 +207,24 @@
         revision="25.0.1"
         sha1="2586312cd2b8a511e4c6236736f5a039fc0f2273">
         <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/rxjava-1.1.6_216c1ed1b889a4ff121b90c5a1f2743b3fd2eb76/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.1.1_560b4cd03f5b8a0a96ad6ab57b88e8a7120d14a7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cumulations/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.3.1/99ce730034c6f5aaed710d1e0e9df95e8714ed5f/logging-interceptor-3.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="99ce730034c6f5aaed710d1e0e9df95e8714ed5f">
+        <dex dex="/home/cumulations/Workplace/RedditInPics/app/build/intermediates/transforms/dex/debug/folders/1000/10/logging-interceptor-3.3.1_ef5d9e671d6cde8b5243947c538a7f44493a5a7c/classes.dex" />
     </item>
     <item
         is-multidex="true"

@@ -93,21 +93,25 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         save.setTag(listPosition);
         share.setTag(listPosition);
 
-        Picasso.with(context)
-                .load(posts.get(listPosition).getChildData().getPreview().getImages().get(0).getSource().getUrl())
-                //.placeholder(R.mipmap.ic_launcher)
-                //.fit()
-                .resize(Integer.parseInt(posts.get(listPosition).getChildData().getPreview().getImages().get(0).getSource().getWidth()), Integer.parseInt(posts.get(listPosition).getChildData().getPreview().getImages().get(0).getSource().getHeight()))
-                .into(imageView, new Callback() {
-                    @Override
-                    public void onSuccess() {
-                    }
+        try {
+            Picasso.with(context)
+                    .load(posts.get(listPosition).getChildData().getPreview().getImages().get(0).getSource().getUrl())
+                    //.placeholder(R.mipmap.ic_launcher)
+                    .fit()
+                    //.resize(Integer.parseInt(posts.get(listPosition).getChildData().getPreview().getImages().get(0).getSource().getWidth()), Integer.parseInt(posts.get(listPosition).getChildData().getPreview().getImages().get(0).getSource().getHeight()))
+                    .into(imageView, new Callback() {
+                        @Override
+                        public void onSuccess() {
+                        }
 
-                    @Override
-                    public void onError() {
+                        @Override
+                        public void onError() {
 
-                    }
-                });
+                        }
+                    });
+        }catch (NullPointerException e) {
+            e.printStackTrace();
+        }
         
 
         save.setOnClickListener(this);
