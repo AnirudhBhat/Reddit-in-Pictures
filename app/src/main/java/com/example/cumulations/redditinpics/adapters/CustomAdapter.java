@@ -94,6 +94,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         share.setTag(listPosition);
 
         try {
+            textViewName.setText(posts.get(listPosition).getChildData().getTitle());
             Picasso.with(context)
                     .load(posts.get(listPosition).getChildData().getPreview().getImages().get(0).getSource().getUrl())
                     //.placeholder(R.mipmap.ic_launcher)
