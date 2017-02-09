@@ -6,6 +6,15 @@ package com.example.cumulations.redditinpics.model;
 
 public class data {
     private String title;
+    private String subreddit;
+
+    public String getSubreddit() {
+        return subreddit;
+    }
+
+    public void setSubreddit(String subreddit) {
+        this.subreddit = subreddit;
+    }
 
     private Preview preview;
 

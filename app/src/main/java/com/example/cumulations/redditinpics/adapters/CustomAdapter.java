@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.example.cumulations.redditinpics.R;
 import com.example.cumulations.redditinpics.model.Children;
 import com.squareup.picasso.Callback;
@@ -95,7 +96,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
         try {
             textViewName.setText(posts.get(listPosition).getChildData().getTitle());
-            Picasso.with(context)
+            /*Picasso.with(context)
                     .load(posts.get(listPosition).getChildData().getPreview().getImages().get(0).getSource().getUrl())
                     //.placeholder(R.mipmap.ic_launcher)
                     .fit()
@@ -109,7 +110,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
                         public void onError() {
 
                         }
-                    });
+                    });*/
+                Glide.with(context)
+                        .load(posts.get(listPosition).getChildData().getPreview().getImages().get(0).getSource().getUrl())
+                        .into(imageView);
         }catch (NullPointerException e) {
             e.printStackTrace();
         }
