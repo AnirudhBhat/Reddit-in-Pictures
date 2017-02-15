@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -30,6 +31,13 @@ public class MainFragment extends Fragment {
     private LinearLayoutManager mLayoutManager;
     private String mName;
     private CustomAdapter mCustomAdapter;
+
+    private int visibleItemCount;
+    private int totalItemCount = 0;
+    private boolean loading = false;
+    private int pastVisibleItemCount;
+    private LinearLayoutManager linearLayoutManager;
+    private String after = "";
 
     public static MainFragment getInstance(String name) {
         MainFragment mainFragment = new MainFragment();
@@ -57,7 +65,45 @@ public class MainFragment extends Fragment {
         mRecyclerView = (RecyclerView) (v.findViewById(R.id.recycler_view));
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
-        getRedditData()
+        mRecyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+                super.onScrollStateChanged(recyclerView, newState);
+            }
+
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                if (dy > 0) {
+                    visibleItemCount = mLayoutManager.getChildCount();
+                    totalItemCount = mLayoutManager.getItemCount();
+                    pastVisibleItemCount = mLayoutManager.findFirstCompletelyVisibleItemPosition();
+                    if (!loading) {
+                        if ((visibleItemCount + pastVisibleItemCount) >= totalItemCount) {
+                            loading = true;
+                            getRedditData(after)
+                                    .subscribeOn(Schedulers.newThread())
+                                    .observeOn(AndroidSchedulers.mainThread())
+                                    .subscribe(new Action1<Reddit>() {
+                                        @Override
+                                        public void call(Reddit reddit) {
+                                            mCustomAdapter.setResults(reddit.getData().getChildren());
+                                            mCustomAdapter.notifyDataSetChanged();
+                                            after = reddit.getData().getAfter();
+                                            loading = false;
+
+                                        }
+                                    }, new Action1<Throwable>() {
+                                        @Override
+                                        public void call(Throwable throwable) {
+
+                                        }
+                                    });
+                        }
+                    }
+                }
+            }
+        });
+        getRedditData(after)
                 //.skip(1)
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -66,6 +112,9 @@ public class MainFragment extends Fragment {
                     public void call(Reddit reddit) {
                         mCustomAdapter = new CustomAdapter(reddit.getData().getChildren(), getActivity());
                         mRecyclerView.setAdapter(mCustomAdapter);
+                        after = reddit.getData().getAfter();
+                        loading = false;
+
                     }
                 }, new Action1<Throwable>() {
                     @Override
@@ -77,8 +126,8 @@ public class MainFragment extends Fragment {
         return v;
     }
 
-    private Observable<Reddit> getRedditData() {
-        return RestClient.getDataForReddit().getRedditData(mName);
+    private Observable<Reddit> getRedditData(String after) {
+        return RestClient.getDataForReddit().getRedditData(mName, after);
     }
 
 }

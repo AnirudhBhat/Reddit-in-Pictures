@@ -67,6 +67,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         }
     }
 
+
+
     public CustomAdapter(List<Children> posts, Context context) {
         this.posts = posts;
         this.context = context;
@@ -81,6 +83,11 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
         MyViewHolder myViewHolder = new MyViewHolder(view);
         return myViewHolder;
+    }
+
+
+    public static void setResults(List<Children> post) {
+        posts.addAll(post);
     }
 
     @Override
