@@ -120,6 +120,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
                     });*/
                 Glide.with(context)
                         .load(posts.get(listPosition).getChildData().getPreview().getImages().get(0).getSource().getUrl())
+                        //.centerCrop()
                         .into(imageView);
         }catch (NullPointerException e) {
             e.printStackTrace();
